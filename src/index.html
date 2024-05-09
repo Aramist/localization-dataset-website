@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SSL Datasets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light justify-content-between">
+      <a class="nav-brand my-1 ms-1" href="https://neurostatslab.org/"><img src="res/NSL_Logo_RGB_Black.png" height="50px"/></a>
+    </nav>
+
+    <div class="container-fluid" id="top-level">
+      <div class="container round bg-light" id="header-container">
+        <div class="row">
+          <div class="col-12">
+            <h1 id="heading" class="text-dark display-3">Benchmark Datasets for Sound Source Localization</h1>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <p class='text-muted'>
+              Here you can find a collection of datasets for benchmarking sound source localization algorithms.
+              For each dataset, we provide a brief description, audio and video clips for each sound instance, ground truth source locations, and other relevant metadata.
+              If you use these datasets in your research, please cite []</p>
+          </div>
+          <div class="col-sm-8 col-md-2">
+            <a href="https://github.com/neurostatslab/gerbilizer/"><img src="res/github-mark.svg"/></a>
+          </div>
+      </div>
+      
+      <!-- small spacer -->
+      <div class="row">
+        <div class="col-12" style="height: 4em">
+          <hr>
+        </div>
+      </div>
+
+      <div class="container" id="datasets-container">
+        <div class="row">
+          
+          <!-- Copy and paste this block to add more datasets-->
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card dataset-card">
+              <img class="card-img-top" src="res/placeholder.png" alt="Speaker-4M">
+              <div class="card-img-overlay text-white dark-transluscent" style="height: 3rem">
+                <h5 class="card-title">Speaker-4M</h5>
+              </div>
+              <div class="card-body">
+                <p class="card-text overflow-hidden">A dataset of sounds emitted by a stationary speaker at ~400 positions.</p>
+                <p class="card-text"> Size: 15GB</p>
+                <div class="btn-group">
+                  <button class="btn btn-outline-secondary" type="button" data-toggle="modal" data-target="#speaker-4m-details-modal">Details</button>
+                  <button class="btn btn-primary btn-outline-primary" type="button" data-toggle="modal" data-target="#speaker-4m-downloads-modal"><img src="res/download-icon-light.svg" height="18px"/></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of block -->
+
+            
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <!-- Hidden modal blocks for dataset details -->
+
+    <!-- Copy and paste this block to add more datasets-->
+    <div class="modal fade" id="speaker-4m-details-modal" tabindex="-1" role="dialog" aria-labelledby>
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-capitalize">Speaker-4M</h5>
+            <button type="button" class="close btn btn-outline-danger" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          
+          <div class="modal-body">
+            <ul>
+              <li><p class="text-dark">A dataset of sounds emitted by a stationary speaker at ~400 positions.</p></li>
+              <li><p class="text-dark">Stimuli include 5 noise-free gerbil vocalizations and a white noise stimulus, each presented at three volume levels.</p></li>
+              <li><p class="text-dark">The speaker's positions lie along a square grid with ~2cm spacing.</p></li>
+              <li><p class="text-dark"># instances: 70,914</p></li>
+              <li><p class="text-dark"># stimulus classes: 18</p></li>
+              <li><p class="text-dark">Sampling rate: 125kHz</p></li>
+              <li><p class="text-dark"># Microphones: 4</p></li>
+              <li><p class="text-dark">Enclosure Dimensions: </p></li>
+              <li><p class="text-dark">Size: 15GB</p></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End of block-->
+
+
+    <!-- Hidden model blocks for download links for each dataset-->
+
+    <!-- Copy and paste this block to add more datasets -->
+    <div class="modal fade" id="speaker-4m-downloads-modal" tabindex="-1" role="dialog" aria-labelledby>
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-capitalize">Speaker-4M download links</h5>
+            <button type="button" class="close btn btn-outline-danger" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          
+          <div class="modal-body">
+            <ul>
+              <li><a class="link-primary" href="#">speaker4m_audio.h5 (15GB)</a></li>
+              <li><a class="link-secondary">speaker4m_video.h5 (?GB)</a></li>
+              <li><a class="link-secondary">speaker4m_metadata.csv (8.3MB)</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- End of block -->
+
+    <!-- Footer with MIT license info -->
+    <div class="container" id="footer-container">
+      <footer>
+        <div class="row">
+          <div class="col-12">
+            <p class="text-muted">
+              <a href="https://github.com/neurostatslab/gerbilizer/blob/main/LICENSE">MIT License</a> | &copy; 2024 NeuroStats Lab
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

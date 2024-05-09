@@ -1,0 +1,1 @@
+rsync -av --exclude "sync_to_cluster.sh" ./ flatiron:dataset_website

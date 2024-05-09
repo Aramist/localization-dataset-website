@@ -1,0 +1,51 @@
+/*
+ * Custom CSS
+ */
+
+:root {
+  --bs-body-bg: var(--bs-gray-100);
+}
+
+#heading {
+  text-align: center;
+}
+
+.round {
+  border-radius: 25px;
+}
+
+.small-round {
+  border-radius: 15px;
+}
+
+.dataset-card {
+  border-radius: 15px;
+  box-shadow: 1px 1px 2px 1px gray;
+  overflow: hidden;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+/* might cause problems down the line */
+img {
+  margin: auto;
+  display: block;
+}
+
+.navbar {
+  left: 50px;
+  right: 50px;
+}
+
+.dark-transluscent {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#footer-container {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+}
