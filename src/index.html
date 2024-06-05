@@ -34,12 +34,9 @@
               For each dataset, we provide a brief description, audio and video
               clips for each sound instance, ground truth source locations, and
               other relevant metadata.
-              If you use these datasets in your research, please cite []
             </p>
-            <p class="text-muted"> Make suggestions for changes to the content
-              on the google doc
-              <a
-                href="https://docs.google.com/document/d/19FVKmOdcngpNNM0nH7V99K1kjr361wUCca5zSjsPhxw/edit?usp=sharing">here</a>
+            <p class='text-muted'>If you use these datasets in your research,
+              please cite []
             </p>
           </div>
           <div class="col-sm-8 col-md-2">
@@ -59,7 +56,7 @@
             <h2 class="text-dark text-center">Datasets</h2>
           </div>
         </div>
-        
+
         <!-- Begin: dataset card container-->
         <div class="container" id="datasets-container">
           <div class="row mt-3">
@@ -71,7 +68,7 @@
                   alt="Speaker-4M">
                 <div class="card-img-overlay text-white dark-transluscent"
                   style="height: 3rem">
-                  <h5 class="card-title">Speaker-4M</h5>
+                  <h5 class="card-title">Speaker-4M-E1</h5>
                 </div>
                 <div class="card-body">
                   <p class="card-text overflow-hidden">A dataset of sounds
@@ -95,15 +92,15 @@
             <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
               <div class="card dataset-card">
                 <img class="card-img-top" src="res/dataset_images/edison.jpg"
-                  alt="Edison-4M">
+                  alt="Edison-4M-E1">
                 <div class="card-img-overlay text-white dark-transluscent"
                   style="height: 3rem">
-                  <h5 class="card-title">Edison-4M</h5>
+                  <h5 class="card-title">Edison-4M-E1</h5>
                 </div>
                 <div class="card-body">
                   <p class="card-text overflow-hidden">A dataset of sounds
                     emitted by an Edison robot performing a random walk around
-                    the Small Shoebox arena.</p>
+                    Environment 1.</p>
                   <p class="card-text"> Size: 44GB</p>
                   <div class="btn-group">
                     <button class="btn btn-outline-secondary" type="button"
@@ -123,10 +120,10 @@
               <div class="card dataset-card">
                 <img class="card-img-top"
                   src="res/dataset_images/solo_gerbil.jpg"
-                  alt="SoloGerbil-4M">
+                  alt="SoloGerbil-4M-E1">
                 <div class="card-img-overlay text-white dark-transluscent"
                   style="height: 3rem">
-                  <h5 class="card-title">SoloGerbil-4M</h5>
+                  <h5 class="card-title">SoloGerbil-4M-E1</h5>
                 </div>
                 <div class="card-body">
                   <p class="card-text overflow-hidden">A dataset of
@@ -151,11 +148,39 @@
             <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
               <div class="card dataset-card">
                 <img class="card-img-top"
-                  src="res/dataset_images/gerbil_earbud.png"
-                  alt="GerbilEarbud-4M">
+                  src="res/dataset_images/dyad_gerbil.jpg"
+                  alt="DyadGerbil-4M-E1">
                 <div class="card-img-overlay text-white dark-transluscent"
                   style="height: 3rem">
-                  <h5 class="card-title">GerbilEarbud-4M</h5>
+                  <h5 class="card-title">DyadGerbil-4M-E1</h5>
+                </div>
+                <div class="card-body">
+                  <p class="card-text overflow-hidden">A dataset of
+                    spontaneous vocalizations emitted by various pairings of two
+                    gerbils.</p>
+                  <p class="card-text"> Size: 86MB</p>
+                  <div class="btn-group">
+                    <button class="btn btn-outline-secondary" type="button"
+                      data-toggle="modal"
+                      data-target="#dyadgerbil-4m-details-modal">Details</button>
+                    <button class="btn btn-primary btn-outline-primary"
+                      type="button" data-toggle="modal"
+                      data-target="#dyadgerbil-4m-downloads-modal"><img
+                        src="res/download-icon-light.svg"
+                        height="18px" /></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+              <div class="card dataset-card">
+                <img class="card-img-top"
+                  src="res/dataset_images/gerbil_earbud.png"
+                  alt="GerbilEarbud-4M-E1">
+                <div class="card-img-overlay text-white dark-transluscent"
+                  style="height: 3rem">
+                  <h5 class="card-title">GerbilEarbud-4M-E1</h5>
                 </div>
                 <div class="card-body">
                   <p class="card-text overflow-hidden">A dataset of sounds
@@ -181,15 +206,15 @@
             <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
               <div class="card dataset-card">
                 <img class="card-img-top" src="res/dataset_images/hexapod.jpg"
-                  alt="Hexapod-8M">
+                  alt="Hexapod-8M-E2">
                 <div class="card-img-overlay text-white dark-transluscent"
                   style="height: 3rem">
-                  <h5 class="card-title">Hexapod-8M</h5>
+                  <h5 class="card-title">Hexapod-8M-E2</h5>
                 </div>
                 <div class="card-body">
                   <p class="card-text overflow-hidden">A dataset of sounds
                     emitted by an ultrasonic speaker affixed to a hexapod robot
-                    walking in parallel lines across the Large Arena.</p>
+                    walking in parallel lines across Environment 2.</p>
                   <p class="card-text"> Size: 236GB</p>
                   <div class="btn-group">
                     <button class="btn btn-outline-secondary" type="button"
@@ -208,11 +233,12 @@
             <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
               <div class="card dataset-card">
                 <img class="card-img-top"
-                  src="res/dataset_images/mouse_earbud.jpg"
-                  alt="MouseEarbud-24M">
+                  src="res/dataset_images/mouse_earbud.png"
+                  alt="MouseEarbud-24M-E3">
                 <div class="card-img-overlay text-white dark-transluscent"
                   style="height: 3rem">
-                  <h5 class="card-title">MouseEarbud-24M</h5>
+                  <h5 class="card-title">MouseEarbud-24M-E3
+                  </h5>
                 </div>
                 <div class="card-body">
                   <p class="card-text overflow-hidden">A dataset of sounds
@@ -236,11 +262,11 @@
             <div class="col-lg-3 col-md-6 col-sm-12 mt-3">
               <div class="card dataset-card">
                 <img class="card-img-top"
-                  src="res/dataset_images/solo_mouse.jpg"
-                  alt="SoloMouse-24M">
+                  src="res/dataset_images/solo_mouse.png"
+                  alt="SoloMouse-24M-E3">
                 <div class="card-img-overlay text-white dark-transluscent"
                   style="height: 3rem">
-                  <h5 class="card-title">SoloMouse-24M</h5>
+                  <h5 class="card-title">SoloMouse-24M-E3</h5>
                 </div>
                 <div class="card-body">
                   <p class="card-text overflow-hidden">A dataset of
@@ -253,6 +279,33 @@
                     <button class="btn btn-primary btn-outline-primary"
                       type="button" data-toggle="modal"
                       data-target="#solomouse-24m-downloads-modal"><img
+                        src="res/download-icon-light.svg"
+                        height="18px" /></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card dataset-card">
+                <img class="card-img-top"
+                  src="res/dataset_images/dyad_mouse.png"
+                  alt="DyadMouse-24M-E3">
+                <div class="card-img-overlay text-white dark-transluscent"
+                  style="height: 3rem">
+                  <h5 class="card-title">DyadMouse-24M-E3</h5>
+                </div>
+                <div class="card-body">
+                  <p class="card-text overflow-hidden">A dataset of
+                    vocalizations emitted by two freely-behaving mice.</p>
+                  <p class="card-text"> Size: 2.1GB</p>
+                  <div class="btn-group">
+                    <button class="btn btn-outline-secondary" type="button"
+                      data-toggle="modal"
+                      data-target="#DyadMouse-24M-E3-details-modal">Details</button>
+                    <button class="btn btn-primary btn-outline-primary"
+                      type="button" data-toggle="modal"
+                      data-target="#dyadmouse-24m-e3-downloads-modal"><img
                         src="res/download-icon-light.svg"
                         height="18px" /></button>
                   </div>
@@ -275,7 +328,7 @@
             <h2 class="text-dark text-center">Environments</h2>
           </div>
         </div>
-        
+
         <!-- Begin: environment card container -->
         <div class="container" id="environments-container">
           <div class="row mt-3">
@@ -285,10 +338,10 @@
               <div class="card dataset-card">
                 <img class="card-img-top"
                   src="res/environment_images/large_shoebox.png"
-                  alt="Large Shoebox">
+                  alt="Environment 1">
                 <div class="card-img-overlay text-white dark-transluscent"
                   style="height: 3rem">
-                  <h5 class="card-title text-capitalize">Large Shoebox</h5>
+                  <h5 class="card-title text-capitalize">Environment 1</h5>
                 </div>
                 <div class="card-body">
                   <p class="card-text overflow-hidden">A prismic environment
@@ -313,10 +366,10 @@
               <div class="card dataset-card">
                 <img class="card-img-top"
                   src="res/environment_images/large_arena.jpeg"
-                  alt="Large Arena">
+                  alt="Environment 2">
                 <div class="card-img-overlay text-white dark-transluscent"
                   style="height: 3rem">
-                  <h5 class="card-title text-capitalize">Large Arena</h5>
+                  <h5 class="card-title text-capitalize">Environment 2</h5>
                 </div>
                 <div class="card-body">
                   <p class="card-text overflow-hidden">A prismic environment
@@ -340,10 +393,10 @@
               <div class="card dataset-card">
                 <img class="card-img-top"
                   src="res/environment_images/princeton.jpg"
-                  alt="Princeton Arena">
+                  alt="Environment 3">
                 <div class="card-img-overlay text-white dark-transluscent"
                   style="height: 3rem">
-                  <h5 class="card-title text-capitalize">Princeton Arena</h5>
+                  <h5 class="card-title text-capitalize">Environment 3</h5>
                 </div>
                 <div class="card-body">
                   <p class="card-text overflow-hidden">A square environment with
@@ -376,7 +429,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-capitalize">Speaker-4M</h5>
+              <h5 class="modal-title text-capitalize">Speaker-4M-E1</h5>
               <button type="button" class="close btn btn-outline-danger"
                 data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -392,7 +445,7 @@
                     three volume levels.</p></li>
                 <li><p class="text-dark">The speaker's positions lie along a
                     square grid with ~2cm spacing.</p></li>
-                <li><p class="text-dark"># instances: 70,914</p></li>
+                <li><p class="text-dark"># samples: 70,914</p></li>
                 <li><p class="text-dark"># stimulus classes: 18</p></li>
                 <li><p class="text-dark">Sampling rate: 125kHz</p></li>
                 <li><p class="text-dark"># Microphones: 4</p></li>
@@ -411,7 +464,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-capitalize">Edison-4M</h5>
+              <h5 class="modal-title text-capitalize">Edison-4M-E1</h5>
               <button type="button" class="close btn btn-outline-danger"
                 data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -422,17 +475,16 @@
               <ul>
                 <li><p class="text-dark">A dataset of sounds emitted by an
                     <a href="https://meetedison.com/">Edison robot</a>
-                    performing a random walk around the Small
-                    Shoebox arena. The stimuli are gathered from longitudinal
+                    performing a random walk around Environment 1. The stimuli are gathered from longitudinal
                     recordings of gerbil families [Peterson et al. 2023. eLife]
                     and presented through an earbud. The dataset includes ground
                     truth locations for the earbud and the robot’s
                     orientation.</p></li>
-                <li><p class="text-dark"># instances: 266,877</p></li>
+                <li><p class="text-dark"># samples: 266,877</p></li>
                 <li><p class="text-dark"># unique stimuli: 10,049</p></li>
                 <li><p class="text-dark"># microphones: 4</p></li>
                 <li><p class="text-dark">Sampling rate: 125kHz</p></li>
-                <li><p class="text-dark">Environment: Large shoebox</p></li>
+                <li><p class="text-dark">Environment: Environment 1</p></li>
                 <li><p class="text-dark">Size: 44GB</p></li>
               </ul>
             </div>
@@ -446,7 +498,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-capitalize">SoloGerbil-4M</h5>
+              <h5 class="modal-title text-capitalize">SoloGerbil-4M-E1</h5>
               <button type="button" class="close btn btn-outline-danger"
                 data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -458,11 +510,43 @@
                 <li><p class="text-dark">A dataset of vocalizations emitted by
                     lone, freely-behaving adolescent gerbils in response to a
                     call presented through a speaker.</p></li>
-                <li><p class="text-dark"># instances: 90,434</p></li>
+                <li><p class="text-dark"># samples: 61,513</p></li>
                 <li><p class="text-dark"># microphones: 4</p></li>
                 <li><p class="text-dark">Sampling rate: 125kHz</p></li>
-                <li><p class="text-dark">Environment: Large shoebox</p></li>
+                <li><p class="text-dark">Environment: Environment 1</p></li>
                 <li><p class="text-dark">Size: 7.5GB</p></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="dyadgerbil-4m-details-modal" tabindex="-1"
+        role="dialog" aria-labelledby>
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-capitalize">DyadGerbil-4M-E1</h5>
+              <button type="button" class="close btn btn-outline-danger"
+                data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <ul>
+                <li><p class="text-dark">A dataset of
+                    spontaneous vocalizations emitted by various pairings of two
+                    gerbils.
+                  </p></li>
+                <li><p class="text-dark">Pairings: male-male, female-female,
+                    male-female, mother-pup</p></li>
+                <li><p class="text-dark"># samples: 653</p></li>
+                <li><p class="text-dark"># microphones: 4</p></li>
+                <li><p class="text-dark">Sampling rate: 125kHz</p></li>
+                <li><p class="text-dark">Environment: Environment 1</p></li>
+                <li><p class="text-dark">Size: 86MB</p></li>
               </ul>
             </div>
 
@@ -475,7 +559,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-capitalize">GerbilEarbud-4M</h5>
+              <h5 class="modal-title text-capitalize">GerbilEarbud-4M-E1</h5>
               <button type="button" class="close btn btn-outline-danger"
                 data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -489,10 +573,10 @@
                     gerbil. The stimuli are gathered from longitudinal
                     recordings of gerbil families [Peterson et al. 2023.
                     eLife].</p></li>
-                <li><p class="text-dark"># instances: 7698</p></li>
+                <li><p class="text-dark"># samples: 7,698</p></li>
                 <li><p class="text-dark"># microphones: 4</p></li>
                 <li><p class="text-dark">Sampling rate: 125kHz</p></li>
-                <li><p class="text-dark">Environment: Large shoebox</p></li>
+                <li><p class="text-dark">Environment: Environment 1</p></li>
                 <li><p class="text-dark">Size: 1.3GB</p></li>
               </ul>
             </div>
@@ -506,7 +590,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-capitalize">Hexapod-8M</h5>
+              <h5 class="modal-title text-capitalize">Hexapod-8M-E2</h5>
               <button type="button" class="close btn btn-outline-danger"
                 data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -516,18 +600,20 @@
             <div class="modal-body">
               <ul>
                 <li><p class="text-dark">A dataset of sounds emitted by an
-                    ultrasonic speaker affixed to a hexapod robot walking in
-                    parallel lines across the Large Arena. As it walks, the arm
+                    ultrasonic speaker affixed to a <a
+                      href="https://freenove.com/">Freenove</a> hexapod robot
+                    walking in
+                    parallel lines across Environment 2. As it walks, the arm
                     carrying the speaker is rotated to different orientations to
                     vary the directionality of the emitted sounds throughout the
                     dataset. The stimuli are gathered from longitudinal
                     recordings of gerbil families [Peterson et al. 2023.
                     eLife].</p></li>
-                <li><p class="text-dark"># instances: 156,900</p></li>
+                <li><p class="text-dark"># samples: 156,900</p></li>
                 <li><p class="text-dark"># unique stimuli: 100</p></li>
                 <li><p class="text-dark"># microphones: 8</p></li>
                 <li><p class="text-dark">Sampling rate: 192kHz</p></li>
-                <li><p class="text-dark">Environment: Large Arena</p></li>
+                <li><p class="text-dark">Environment: Environment 2</p></li>
                 <li><p class="text-dark">Size: 236GB</p></li>
               </ul>
             </div>
@@ -541,7 +627,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-capitalize">MouseEarbud-24M</h5>
+              <h5 class="modal-title text-capitalize">MouseEarbud-24M-E3</h5>
               <button type="button" class="close btn btn-outline-danger"
                 data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -555,11 +641,10 @@
                     The stimuli are noise-filtered mouse vocalizations. Ground
                     truth locations include elevation (position along
                     z-dimension), but not orientation.</p></li>
-                <li><p class="text-dark"># instances: 200,000</p></li>
+                <li><p class="text-dark"># samples: 200,000</p></li>
                 <li><p class="text-dark"># microphones: 24</p></li>
                 <li><p class="text-dark">Sampling rate: 250kHz</p></li>
-                <li><p class="text-dark">Environment: Princeton
-                    environment</p></li>
+                <li><p class="text-dark">Environment: Environment 3</p></li>
                 <li><p class="text-dark">Size: 208GB</p></li>
               </ul>
             </div>
@@ -573,7 +658,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-capitalize">SoloMouse-24M</h5>
+              <h5 class="modal-title text-capitalize">SoloMouse-24M-E3</h5>
               <button type="button" class="close btn btn-outline-danger"
                 data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -584,12 +669,39 @@
               <ul>
                 <li><p class="text-dark">A dataset of vocalizations emitted by a
                     freely-behaving mouse.</p></li>
-                <li><p class="text-dark"># instances: 549</p></li>
+                <li><p class="text-dark"># samples: 549</p></li>
                 <li><p class="text-dark"># microphones: 24</p></li>
                 <li><p class="text-dark">Sampling rate: 250kHz</p></li>
-                <li><p class="text-dark">Environment: Princeton
-                    environment</p></li>
+                <li><p class="text-dark">Environment: Environment 3</p></li>
                 <li><p class="text-dark">Size: 362MB</p></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="DyadMouse-24M-E3-details-modal" tabindex="-1"
+        role="dialog" aria-labelledby>
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-capitalize">DyadMouse-24M-E3</h5>
+              <button type="button" class="close btn btn-outline-danger"
+                data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <ul>
+                <li><p class="text-dark">A dataset of vocalizations emitted by
+                    two freely-behaving mice.</p></li>
+                <li><p class="text-dark"># samples: 2,191</p></li>
+                <li><p class="text-dark"># microphones: 24</p></li>
+                <li><p class="text-dark">Sampling rate: 250kHz</p></li>
+                <li><p class="text-dark">Environment: Environment 3</p></li>
+                <li><p class="text-dark">Size: 2.1GB</p></li>
               </ul>
             </div>
 
@@ -606,7 +718,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-capitalize">Speaker-4M download
+              <h5 class="modal-title text-capitalize">Speaker-4M-E1 download
                 links</h5>
               <button type="button" class="close btn btn-outline-danger"
                 data-dismiss="modal" aria-label="Close">
@@ -616,10 +728,11 @@
 
             <div class="modal-body">
               <ul>
-                <li><a class="link-primary" href="#">speaker-4m_audio.h5
+                <li><a class="link-primary" href="res/download_links/speaker-4m-e1_audio.h5">speaker-4m-e1_audio.h5
                     (15GB)</a></li>
-                <li><a class="link-secondary">speaker-4m_video.h5 (?GB)</a></li>
-                <li><a class="link-secondary">speaker-4m_metadata.csv
+                <li><a class="link-secondary" href="res/download_links/">speaker-4m-e1_video.h5
+                    (?GB)</a></li>
+                <li><a class="link-secondary" href="#">speaker-4m-e1_metadata.csv
                     (8.3MB)</a></li>
               </ul>
             </div>
@@ -634,7 +747,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-capitalize">Edison-4M download
+              <h5 class="modal-title text-capitalize">Edison-4M-E1 download
                 links</h5>
               <button type="button" class="close btn btn-outline-danger"
                 data-dismiss="modal" aria-label="Close">
@@ -644,11 +757,11 @@
 
             <div class="modal-body">
               <ul>
-                <li><a class="link-primary" href="#">edison-4m_audio.h5
+                <li><a class="link-primary" href="res/download_links/edison-4m-e1_audio.h5">edison-4m-e1_audio.h5
                     (44GB)</a></li>
-                <li><a class="link-secondary" href="#">edison-4m_video.h5
+                <li><a class="link-secondary" href="res/download_links/edison-4m-e1_video.h5">edison-4m-e1_video.h5
                     (?GB)</a></li>
-                <li><a class="link-secondary" href="#">edison-4m_metadata.csv
+                <li><a class="link-secondary" href="#">edison-4m-e1_metadata.csv
                     (76MB)</a></li>
               </ul>
             </div>
@@ -662,7 +775,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-capitalize">SoloGerbil-4M download
+              <h5 class="modal-title text-capitalize">SoloGerbil-4M-E1 download
                 links</h5>
               <button type="button" class="close btn btn-outline-danger"
                 data-dismiss="modal" aria-label="Close">
@@ -672,12 +785,12 @@
 
             <div class="modal-body">
               <ul>
-                <li><a class="link-primary" href="#">sologerbil-4m_audio.h5
+                <li><a class="link-primary" href="res/download_links/sologerbil-4m-e1_audio.h5">sologerbil-4m-e1_audio.h5
                     (7.5GB)</a></li>
-                <li><a class="link-secondary" href="#">sologerbil-4m_video.h5
+                <li><a class="link-secondary" href="res/download_links/sologerbli-4m-e1_video.h5">sologerbil-4m-e1_video.h5
                     (?GB)</a></li>
                 <li><a class="link-secondary"
-                    href="#">sologerbil-4m_metadata.csv (41MB)</a></li>
+                    href="#">sologerbil-4m-e1_metadata.csv (41MB)</a></li>
               </ul>
             </div>
 
@@ -690,7 +803,8 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-capitalize">GerbilEarbud-4M download
+              <h5 class="modal-title text-capitalize">GerbilEarbud-4M-E1
+                download
                 links</h5>
               <button type="button" class="close btn btn-outline-danger"
                 data-dismiss="modal" aria-label="Close">
@@ -700,9 +814,10 @@
 
             <div class="modal-body">
               <ul>
-                <li><a class="link-primary" href="#">gerbilearbud-4m_audio.h5
+                <li><a class="link-primary" href="res/download_links/gerbilearbud-4m-e1_audio.h5">gerbilearbud-4m-e1_audio.h5
                     (1.3GB)</a></li>
-                <li><a class="link-secondary" href="#">gerbilearbud-4m_video.h5
+                <li><a class="link-secondary"
+                    href="#">gerbilearbud-4m-e1_video.h5
                     (?GB)</a></li>
                 <li><a class="link-secondary"
                     href="#">gerbilearbud-4m_metadata.csv (?MB)</a></li>
@@ -718,7 +833,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-capitalize">Hexapod-8M download
+              <h5 class="modal-title text-capitalize">Hexapod-8M-E2 download
                 links</h5>
               <button type="button" class="close btn btn-outline-danger"
                 data-dismiss="modal" aria-label="Close">
@@ -728,12 +843,8 @@
 
             <div class="modal-body">
               <ul>
-                <li><a class="link-primary" href="#">hexapod-8m_audio.h5
+                <li><a class="link-primary" href="res/download_links/hexapod-8m-e2_audio.h5">hexapod-8m-e2_audio.h5
                     (236GB)</a></li>
-                <li><a class="link-secondary" href="#">hexapod-8m_video.h5
-                    (?GB)</a></li>
-                <li><a class="link-secondary" href="#">hexapod-8m_metadata.csv
-                    (?MB)</a></li>
               </ul>
             </div>
 
@@ -746,7 +857,8 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-capitalize">MouseEarbud-24M download
+              <h5 class="modal-title text-capitalize">MouseEarbud-24M-E3
+                download
                 links</h5>
               <button type="button" class="close btn btn-outline-danger"
                 data-dismiss="modal" aria-label="Close">
@@ -756,7 +868,7 @@
 
             <div class="modal-body">
               <ul>
-                <li><a class="link-primary" href="#">mouseearbud-24m_audio.h5
+                <li><a class="link-primary" href="res/download_links/mouseearbud-24m-e3_audio.h5">mouseearbud-24m-e3_audio.h5
                     (208GB)</a></li>
               </ul>
             </div>
@@ -770,7 +882,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-capitalize">SoloMouse-24M download
+              <h5 class="modal-title text-capitalize">SoloMouse-24M-E3 download
                 links</h5>
               <button type="button" class="close btn btn-outline-danger"
                 data-dismiss="modal" aria-label="Close">
@@ -780,8 +892,33 @@
 
             <div class="modal-body">
               <ul>
-                <li><a class="link-primary" href="#">solomouse-24m_audio.h5
+                <li><a class="link-primary" href="res/download_links/solomouse-24m-e3_audio.h5">solomouse-24m-e3_audio.h5
                     (362MB)</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="dyadmouse-24m-e3-downloads-modal"
+        tabindex="-1"
+        role="dialog" aria-labelledby>
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-capitalize">DyadMouse-24M-E3 download
+                links</h5>
+              <button type="button" class="close btn btn-outline-danger"
+                data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+
+            <div class="modal-body">
+              <ul>
+                <li><a class="link-primary" href="res/download_links/dyadmouse-24m-e3_audio.h5">dyadmouse-24m-e3_audio.h5
+                    (2.1GB)</a></li>
               </ul>
             </div>
 
@@ -795,7 +932,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-capitalize">Large Shoebox</h5>
+              <h5 class="modal-title text-capitalize">Environment 1</h5>
               <button type="button" class="close btn btn-outline-danger"
                 data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -806,7 +943,7 @@
               <!-- redisplay the environment image in the modal-->
               <img class="card-img-top round"
                 src="res/environment_images/large_shoebox.png"
-                alt="Large Shoebox" />
+                alt="Environment 1" />
               <ul class="mt-2">
                 <li><p class="text-dark">A prismic environment with hard plastic
                     walls, acoustic foam lining the ceiling, and an inch of
@@ -830,7 +967,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-capitalize">Large Arena</h5>
+              <h5 class="modal-title text-capitalize">Environment 2</h5>
               <button type="button" class="close btn btn-outline-danger"
                 data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -841,7 +978,7 @@
               <!-- redisplay the environment image in the modal-->
               <img class="card-img-top round"
                 src="res/environment_images/large_arena.jpeg"
-                alt="Large Arena" />
+                alt="Environment 2" />
               <ul class="mt-2">
                 <li><p class="text-dark">A prismic environment with hard plastic
                     for its walls and ceiling and a layer of bedding on its
@@ -864,7 +1001,7 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-capitalize">Princeton Arena</h5>
+              <h5 class="modal-title text-capitalize">Environment 3</h5>
               <button type="button" class="close btn btn-outline-danger"
                 data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -875,7 +1012,7 @@
               <!-- redisplay the environment image in the modal-->
               <img class="card-img-top round"
                 src="res/environment_images/princeton.jpg"
-                alt="Princeton Arena" />
+                alt="Environment 3" />
               <ul class="mt-2">
                 <li><p class="text-dark">A square environment with
                     acoustically transparent walls and a Lexane floor.

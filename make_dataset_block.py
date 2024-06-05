@@ -23,7 +23,7 @@
                 three volume levels.</p></li>
             <li><p class="text-dark">The speaker's positions lie along a
                 square grid with ~2cm spacing.</p></li>
-            <li><p class="text-dark"># instances: 70,914</p></li>
+            <li><p class="text-dark"># samples: 70,914</p></li>
             <li><p class="text-dark"># stimulus classes: 18</p></li>
             <li><p class="text-dark">Sampling rate: 125kHz</p></li>
             <li><p class="text-dark"># Microphones: 4</p></li>
@@ -81,7 +81,7 @@ edison_info = {
     "title": "Edison-4M",
     "descriptions": [
         "A dataset of sounds emitted by an Edison robot performing a random walk around the Small Shoebox arena. The stimuli are gathered from longitudinal recordings of gerbil families [Peterson et al. 2023. eLife] and presented through an earbud. The dataset includes ground truth locations for the earbud and the robot’s orientation.",
-        "# instances: 266,877",
+        "# samples: 266,877",
         "# unique stimuli: 10,049",
         "# microphones: 4",
         "Sampling rate: 125kHz",
@@ -94,7 +94,7 @@ solo_gerb_info = {
     "title": "SoloGerbil-4M",
     "descriptions": [
         "A dataset of vocalizations emitted by lone, freely-behaving adolescent gerbils in response to a call presented through a speaker.",
-        "# instances: 90,434",
+        "# samples: 90,434",
         "# microphones: 4",
         "Sampling rate: 125kHz",
         "Environment: Large shoebox",
@@ -106,7 +106,7 @@ gerbil_earbud_info = {
     "title": "GerbilEarbud-4M",
     "descriptions": [
         "A dataset of sounds emitted by an earbud affixed to the head of a freely-behaving adult gerbil. The stimuli are gathered from longitudinal recordings of gerbil families [Peterson et al. 2023. eLife].",
-        "# instances: 7698",
+        "# samples: 7,698",
         "# microphones: 4",
         "Sampling rate: 125kHz",
         "Environment: Large shoebox",
@@ -118,7 +118,7 @@ hexapod_info = {
     "title": "Hexapod-8M",
     "descriptions": [
         "A dataset of sounds emitted by an ultrasonic speaker affixed to a hexapod robot walking in parallel lines across the Large Arena. As it walks, the arm carrying the speaker is rotated to different orientations to vary the directionality of the emitted sounds throughout the dataset. The stimuli are gathered from longitudinal recordings of gerbil families [Peterson et al. 2023. eLife].",
-        "# instances: 156,900",
+        "# samples: 156,900",
         "# unique stimuli: 100",
         "# microphones: 8",
         "Sampling rate: 192kHz",
@@ -132,7 +132,7 @@ mouse_earbud_info = {
     "title": "MouseEarbud-24M",
     "descriptions": [
         "A dataset of sounds emitted by an earbud affixed to the head of a lone, freely-behaving mouse. The stimuli are noise-filtered mouse vocalizations. Ground truth locations include elevation (position along z-dimension), but not orientation.",
-        "# instances: 200,000",
+        "# samples: 200,000",
         "# microphones: 24",
         "Sampling rate: 250kHz",
         "Environment: Princeton environment",
@@ -144,13 +144,27 @@ solo_mouse_info = {
     "title": "SoloMouse-24M",
     "descriptions": [
         "A dataset of vocalizations emitted by a freely-behaving mouse.",
-        "# instances: 549",
+        "# samples: 549",
         "# microphones: 24",
         "Sampling rate: 250kHz",
         "Environment: Princeton environment",
         "Size: 362MB",
     ],
 }
+
+dyad_mouse_info = {
+    "title": "DyadMouse-24M-E3",
+    "descriptions": [
+        "A dataset of vocalizations emitted by two freely-behaving mice.",
+        "# samples: 2,191",
+        "# microphones: 24",
+        "Sampling rate: 250kHz",
+        "Environment: Princeton environment",
+        "Size: 2.1GB",
+    ],
+}
+
+print(make_modal_block(**dyad_mouse_info))
 
 
 # print(make_modal_block(**edison_info))
@@ -281,6 +295,13 @@ def make_dataset_card(title: str, description: str, size: str) -> str:
 #         "362MB",
 #     )
 # )
+print(
+    make_dataset_card(
+        "DyadMouse-24M-E3",
+        "A dataset of vocalizations emitted by two freely-behaving mice.",
+        "2.1GB",
+    )
+)
 
 
 # Format for download modals:
@@ -368,69 +389,78 @@ def make_downloads_modal(title: str, links: list[str]) -> str:
 #     )
 # )
 
+# print(
+#     make_downloads_modal(
+#         "Edison-4M",
+#         [
+#             "edison-4m_audio.h5 (44GB)",
+#             "edison-4m_video.h5 (?GB)",
+#             "edison-4m_metadata.csv (76MB)",
+#         ],
+#     )
+# )
+
+
+# print(
+#     make_downloads_modal(
+#         "SoloGerbil-4M",
+#         [
+#             "sologerbil-4m_audio.h5 (7.5GB)",
+#             "sologerbil-4m_video.h5 (?GB)",
+#             "sologerbil-4m_metadata.csv (41MB)",
+#         ],
+#     )
+# )
+
+
+# print(
+#     make_downloads_modal(
+#         "GerbilEarbud-4M",
+#         [
+#             "gerbilearbud-4m_audio.h5 (1.3GB)",
+#             "gerbilearbud-4m_video.h5 (?GB)",
+#             "gerbilearbud-4m_metadata.csv (?MB)",
+#         ],
+#     )
+# )
+
+
+# print(
+#     make_downloads_modal(
+#         "Hexapod-8M",
+#         [
+#             "hexapod-8m_audio.h5 (236GB)",
+#             "hexapod-8m_video.h5 (?GB)",
+#             "hexapod-8m_metadata.csv (?MB)",
+#         ],
+#     )
+# )
+
+
+# print(
+#     make_downloads_modal(
+#         "MouseEarbud-24M",
+#         [
+#             "mouseearbud-24m_audio.h5 (208GB)",
+#         ],
+#     )
+# )
+
+
+# print(
+#     make_downloads_modal(
+#         "SoloMouse-24M",
+#         [
+#             "solomouse-24m_audio.h5 (362MB)",
+#         ],
+#     )
+# )
+
 print(
     make_downloads_modal(
-        "Edison-4M",
+        "DyadMouse-24M-E3",
         [
-            "edison-4m_audio.h5 (44GB)",
-            "edison-4m_video.h5 (?GB)",
-            "edison-4m_metadata.csv (76MB)",
-        ],
-    )
-)
-
-
-print(
-    make_downloads_modal(
-        "SoloGerbil-4M",
-        [
-            "sologerbil-4m_audio.h5 (7.5GB)",
-            "sologerbil-4m_video.h5 (?GB)",
-            "sologerbil-4m_metadata.csv (41MB)",
-        ],
-    )
-)
-
-
-print(
-    make_downloads_modal(
-        "GerbilEarbud-4M",
-        [
-            "gerbilearbud-4m_audio.h5 (1.3GB)",
-            "gerbilearbud-4m_video.h5 (?GB)",
-            "gerbilearbud-4m_metadata.csv (?MB)",
-        ],
-    )
-)
-
-
-print(
-    make_downloads_modal(
-        "Hexapod-8M",
-        [
-            "hexapod-8m_audio.h5 (236GB)",
-            "hexapod-8m_video.h5 (?GB)",
-            "hexapod-8m_metadata.csv (?MB)",
-        ],
-    )
-)
-
-
-print(
-    make_downloads_modal(
-        "MouseEarbud-24M",
-        [
-            "mouseearbud-24m_audio.h5 (208GB)",
-        ],
-    )
-)
-
-
-print(
-    make_downloads_modal(
-        "SoloMouse-24M",
-        [
-            "solomouse-24m_audio.h5 (362MB)",
+            "dyadmouse-24m-e3_audio.h5 (2.1GB)",
         ],
     )
 )
