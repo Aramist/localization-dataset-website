@@ -1,0 +1,1 @@
+rsync -av --delete --no-links src/ /mnt/home/atanelus/public_www/
