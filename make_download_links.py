@@ -45,20 +45,20 @@ links = [
     ),
     # Video links
     (
-        dataset_dir / "videos" / "sologerbil-4m-e1_video.h5",
-        download_dir / "sologerbil-4m-e1_video.h5",
+        dataset_dir / "videos" / "sologerbil-4m-e1_video.mp4",
+        download_dir / "sologerbil-4m-e1_video.mp4",
     ),
     (
-        dataset_dir / "videos" / "edison-4m-e1_video.h5",
-        download_dir / "edison-4m-e1_video.h5",
+        dataset_dir / "videos" / "edison-4m-e1_video.mp4",
+        download_dir / "edison-4m-e1_video.mp4",
     ),
     (
-        dataset_dir / "videos" / "speaker-4m-e1_video.h5",
-        download_dir / "speaker-4m-e1_video.h5",
+        dataset_dir / "videos" / "speaker-4m-e1_video.mp4",
+        download_dir / "speaker-4m-e1_video.mp4",
     ),
     (
-        dataset_dir / "videos" / "dyadgerbil-4m-e1_video.h5",
-        download_dir / "dyadgerbil-4m-e1_video.h5",
+        dataset_dir / "videos" / "dyadgerbil-4m-e1_video.mp4",
+        download_dir / "dyadgerbil-4m-e1_video.mp4",
     ),
     # test train split links
     (
