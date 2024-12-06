@@ -23,30 +23,113 @@
 
         <div class="container-fluid" id="top-level">
             <div class="container round bg-light" id="header-container">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <h1 id="heading"
+                            class="text-dark display-3 text-center">Vocal Call
+                            Locator Benchmark (VCL) for Localizing Rodent
+                            Vocalizations From Multichannel Audio</h1>
+                    </div>
+                    <div class="col-10" id="author-list">
+                        <h3 class="text-dark text-center">
+                            Ralph E Peterson<sup>1,2&#42;</sup>,
+                            Aramis Tanelus<sup>2&#42;</sup>,
+                            Christopher Ick<sup>3</sup>,
+                            Bartul Mimica<sup>4</sup>,
+                            Niegil Francis<sup>1,5</sup>,
+                            Violet J Ivan<sup>1</sup>,
+                            Aman Choudhri<sup>6</sup>,
+                            Annegret L Falkner<sup>4</sup>,
+                            Mala Murthy<sup>4</sup>,
+                            David M Schneider<sup>1</sup>,
+                            Dan H Sanes<sup>1</sup>,
+                            Alex H Williams<sup>1,2&#134;</sup>
+                        </h3>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-12">
-                        <h1 id="heading" class="text-dark display-3">Benchmark
-                            Datasets for
-                            Sound Source Localization</h1>
+                        <h6 class="text-dark text-center">
+                            <sup>1</sup>NYU, Center for Neural Science<br>
+                            <sup>2</sup>Flatiron Institute, Center for
+                            Computational Neuroscience<br>
+                            <sup>3</sup>NYU, Center for Data Science<br>
+                            <sup>4</sup>Princeton Neuroscience Institute<br>
+                            <sup>5</sup>NYU, Tandon School of Engineering<br>
+                            <sup>6</sup>Columbia University<br>
+                        </h3>
+                    </div>
+                </div>
+
+                <!-- small spacer -->
+                <div class="row justify-content-center">
+                    <div class="col-12 justify-content-center"
+                        style="height: 4em">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h5 class="text-dark text-center">Abstract</h5>
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-8">
+                    <div class="col-sm-10 col-6">
                         <p class='text-muted'>
-                            Here you can find a collection of datasets for
-                            benchmarking sound
-                            source localization algorithms.
-                            For each dataset, we provide a brief description,
-                            audio and video
-                            clips for each sound instance, ground truth source
-                            locations, and
-                            other relevant metadata.
+                            Understanding the behavioral and neural dynamics of
+                            social interactions is a goal of contemporary
+                            neuroscience. Many machine learning methods have
+                            emerged in recent years to make sense of complex
+                            video and neurophysiological data that result from
+                            these experiments. Less focus has been placed on
+                            understanding how animals process acoustic
+                            information, including social vocalizations. A
+                            critical step to bridge this gap is determining the
+                            senders and receivers of acoustic information in
+                            social interactions. While sound source localization
+                            (SSL) is a classic problem in signal processing,
+                            existing approaches are limited in their ability to
+                            localize animal-generated sounds in standard
+                            laboratory environments. Advances in deep learning
+                            methods for SSL are likely to help address these
+                            limitations, however there are currently no publicly
+                            available models, datasets, or benchmarks to
+                            systematically evaluate SSL algorithms in the domain
+                            of bioacoustics. Here, we present the VCL Benchmark:
+                            the first large-scale dataset for benchmarking SSL
+                            algorithms in rodents. We acquired synchronized
+                            video and multi-channel audio recordings of 767,295
+                            sounds with annotated ground truth sources across 9
+                            conditions. The dataset provides benchmarks which
+                            evaluate SSL performance on real data, simulated
+                            acoustic data, and a mixture of real and simulated
+                            data. We intend for this benchmark to facilitate
+                            knowledge transfer between the neuroscience and
+                            acoustic machine learning communities, which have
+                            had limited overlap.
                         </p>
                     </div>
-                    <div class="col-sm-8 col-md-2">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-3 col-md-1">
+                        <a
+                            href="https://www.biorxiv.org/content/10.1101/2024.09.20.613758v1"><img
+                                src="res/arxiv.svg" height="50" /></a>
+                    </div>
+                    <div class="col-sm-3 col-md-1">
                         <a
                             href="https://github.com/neurostatslab/vocalocator/"><img
-                                src="res/github-mark.svg" /></a>
+                                src="res/github-mark.svg" height="50" /></a>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-11">
+                        <p class="text-muted">
+                            <sup>&#42;</sup>Equal contribution<br>
+                            <sup>&#134;</sup>Correspondence to
+                            rep359@nyu.edu and alex.h.williams@nyu.edu
+                        </p>
                     </div>
                 </div>
 
