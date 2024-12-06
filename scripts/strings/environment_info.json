@@ -1,0 +1,47 @@
+[
+    {
+        "id": "environment_1",
+        "card_title": "Environment 1",
+        "card_bg_image_url": "res/environment_images/large_shoebox.png",
+        "short_description": "A prismic environment with hard plastic walls, acoustic foam lining the ceiling, and an inch of bedding on the floor.",
+        "full_description": "A prismic environment with hard plastic walls, acoustic foam lining the ceiling, and an inch of bedding on the floor. Four microphones are mounted at the ceiling\u2019s corners and directed at the center of the floor.",
+        "num_microphones": 4,
+        "microphone_model": "Avisoft-Bioacoustics CM16/CMPA48AAF-5V",
+        "sampling_rate": "125kHz",
+        "dimensions": [
+            "top: 0.616 x 0.413",
+            "bottom: 0.559 x 0.356",
+            "height: 0.368"
+        ]
+    },
+    {
+        "id": "environment_2",
+        "card_title": "Environment 2",
+        "card_bg_image_url": "res/environment_images/large_arena.jpeg",
+        "short_description": "A prismic environment with hard plastic for its walls and ceiling and a layer of bedding on its floor.",
+        "full_description": "A prismic environment with hard plastic for its walls and ceiling and a layer of bedding on its floor. Eight microphones are mounted at the ceiling\u2019s corners and directed at the center of the floor.",
+        "num_microphones": 8,
+        "microphone_model": "Avisoft-Bioacoustics CM16/CMPA48AAF-5V",
+        "sampling_rate": "192kHz",
+        "dimensions": [
+            "top: 1.218 x 0.914",
+            "bottom: 1.218 x 0.914",
+            "height: 0.610"
+        ]
+    },
+    {
+        "id": "environment_3",
+        "card_title": "Environment 3",
+        "card_bg_image_url": "res/environment_images/princeton.jpg",
+        "short_description": "A square environment with acoustically transparent walls and a Lexane floor.",
+        "full_description": "A square environment with acoustically transparent walls and a Lexane floor. Twenty-four microphones line the perimeter, roughly 1 cm above the floor. Each microphone is perpendicular to the wall it borders.",
+        "num_microphones": 24,
+        "microphone_model": "Avisoft-Bioacoustics CM16/CMPA",
+        "sampling_rate": "250kHz",
+        "dimensions": [
+            "top: 0.615 x 0.615",
+            "bottom: 0.615 x 0.615",
+            "height: 0.425"
+        ]
+    }
+]

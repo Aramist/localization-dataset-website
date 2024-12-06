@@ -1,0 +1,275 @@
+[
+    {
+        "id": "speaker",
+        "card_title": "Speaker-4M-E1",
+        "card_bg_image_url": "res/dataset_images/speaker.jpg",
+        "short_description": "A dataset of sounds emitted by a stationary speaker at ~400 positions.",
+        "full_description": "A dataset of sounds emitted by a stationary speaker at ~400 positions. Stimuli include 5 noise-free gerbil vocalizations and a white noise stimulus, each presented at three volume levels. The speaker's positions lie along a square grid with ~2cm spacing.",
+        "num_samples": 70914,
+        "size": "15GB",
+        "environment": "Environment 1",
+        "num_microphones": 4,
+        "sampling_rate": "125kHz",
+        "additional_bullets": [
+            "Number of stimulus classes: 18"
+        ],
+        "links": [
+            {
+                "url": "res/download_links/speaker-4m-e1_audio.h5",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/audio/speaker-4m-e1_audio.h5",
+                "size": "15GB"
+            },
+            {
+                "url": "res/download_links/speaker-4m-e1_video.mp4",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/videos/speaker-4m-e1_video.mp4",
+                "size": "570MB"
+            },
+            {
+                "url": "res/download_links/speaker-4m-e1_pretrained.zip",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/pretrained_models/speaker-4m-e1_pretrained.zip",
+                "size": "178MB"
+            },
+            {
+                "url": "res/download_links/speaker-4m-e1_split.zip",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/test_train_splits/speaker-4m-e1_split.zip",
+                "size": "0.2MB"
+            }
+        ]
+    },
+    {
+        "id": "edison",
+        "card_title": "Edison-4M-E1",
+        "card_bg_image_url": "res/dataset_images/edison.jpg",
+        "short_description": "A dataset of sounds emitted by an Edison robot performing a random walk around Environment 1.",
+        "full_description": "A dataset of sounds emitted by an Edison robot performing a random walk around Environment 1. The stimuli are gathered from longitudinal recordings of gerbil families [Peterson et al. 2023. eLife] and presented through an earbud. The dataset includes ground truth locations for the earbud and the robot\u2019s orientation.",
+        "num_samples": 266877,
+        "size": "44GB",
+        "environment": "Environment 1",
+        "num_microphones": 4,
+        "sampling_rate": "125kHz",
+        "additional_bullets": [
+            "Number of unique stimuli: 10,049"
+        ],
+        "links": [
+            {
+                "url": "res/download_links/edison-4m-e1_audio.h5",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/audio/edison-4m-e1_audio.h5",
+                "size": "44GB"
+            },
+            {
+                "url": "res/download_links/edison-4m-e1_video.mp4",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/videos/edison-4m-e1_video.mp4",
+                "size": "1.6GB"
+            },
+            {
+                "url": "res/download_links/edison-4m-e1_pretrained.zip",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/pretrained_models/edison-4m-e1_pretrained.zip",
+                "size": "178MB"
+            },
+            {
+                "url": "res/download_links/edison-4m-e1_split.zip",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/test_train_splits/edison-4m-e1_split.zip",
+                "size": "0.8MB"
+            }
+        ]
+    },
+    {
+        "id": "sologerbil",
+        "card_title": "SoloGerbil-4M-E1",
+        "card_bg_image_url": "res/dataset_images/solo_gerbil.jpg",
+        "short_description": "A dataset of vocalizations emitted by lone, freely-behaving adolescent gerbils in response to vocalizations presented through a speaker.",
+        "full_description": "A dataset of vocalizations emitted by lone, freely-behaving adolescent gerbils in response to vocalizations presented through a speaker.",
+        "num_samples": 61513,
+        "size": "7.5GB",
+        "environment": "Environment 1",
+        "num_microphones": 4,
+        "sampling_rate": "125kHz",
+        "additional_bullets": [],
+        "links": [
+            {
+                "url": "res/download_links/sologerbil-4m-e1_audio.h5",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/audio/sologerbil-4m-e1_audio.h5",
+                "size": "7.5GB"
+            },
+            {
+                "url": "res/download_links/sologerbil-4m-e1_video.mp4",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/videos/sologerbil-4m-e1_video.mp4",
+                "size": "450MB"
+            },
+            {
+                "url": "res/download_links/sologerbil-4m-e1_pretrained.zip",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/pretrained_models/sologerbil-4m-e1_pretrained.zip",
+                "size": "178MB"
+            },
+            {
+                "url": "res/download_links/sologerbil-4m-e1_split.zip",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/test_train_splits/sologerbil-4m-e1_split.zip",
+                "size": "0.2MB"
+            }
+        ]
+    },
+    {
+        "id": "dyadgerbil",
+        "card_title": "DyadGerbil-4M-E1",
+        "card_bg_image_url": "res/dataset_images/dyad_gerbil.jpg",
+        "short_description": "A dataset of spontaneous vocalizations emitted by various pairings of two gerbils.",
+        "full_description": "A dataset of spontaneous vocalizations emitted by various pairings of two gerbils.",
+        "num_samples": 653,
+        "size": "86MB",
+        "environment": "Environment 1",
+        "num_microphones": 4,
+        "sampling_rate": "125kHz",
+        "additional_bullets": [
+            "Pairings: male-male, male-female, female-female, mother-pup"
+        ],
+        "links": [
+            {
+                "url": "res/download_links/dyadgerbil-4m-e1_audio.h5",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/audio/dyadgerbil-4m-e1_audio.h5",
+                "size": "86MB"
+            },
+            {
+                "url": "res/download_links/dyadgerbil-4m-e1_video.mp4",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/videos/dyadgerbil-4m-e1_video.mp4",
+                "size": "10MB"
+            }
+        ]
+    },
+    {
+        "id": "gerbilearbud",
+        "card_title": "GerbilEarbud-4M-E1",
+        "card_bg_image_url": "res/dataset_images/gerbil_earbud.png",
+        "short_description": "A dataset of sounds emitted by an earbud affixed to the head of a freely-behaving adult gerbil.",
+        "full_description": "A dataset of sounds emitted by an earbud affixed to the head of a freely-behaving adult gerbil. The stimuli are gathered from longitudinal recordings of gerbil families [Peterson et al. 2023. eLife].",
+        "num_samples": 7698,
+        "size": "1.3GB",
+        "environment": "Environment 1",
+        "num_microphones": 4,
+        "sampling_rate": "125kHz",
+        "additional_bullets": [],
+        "links": [
+            {
+                "url": "res/download_links/gerbilearbud-4m-e1_audio.h5",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/audio/gerbilearbud-4m-e1_audio.h5",
+                "size": "1.3GB"
+            },
+            {
+                "url": "res/download_links/gerbilearbud-4m-e1_video.mp4",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/videos/gerbilearbud-4m-e1_video.mp4",
+                "size": "79MB"
+            },
+            {
+                "url": "res/download_links/gerbilearbud-4m-e1_pretrained.zip",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/pretrained_models/gerbilearbud-4m-e1_pretrained.zip",
+                "size": "177MB"
+            },
+            {
+                "url": "res/download_links/gerbilearbud-4m-e1_split.zip",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/test_train_splits/gerbilearbud-4m-e1_split.zip",
+                "size": "20KB"
+            }
+        ]
+    },
+    {
+        "id": "hexapod",
+        "card_title": "Hexapod-8M-E2",
+        "card_bg_image_url": "res/dataset_images/hexapod.jpg",
+        "short_description": "A dataset of sounds emitted by an ultrasonic speaker affixed to a hexapod robot walking in parallel lines across Environment 2.",
+        "full_description": "A dataset of sounds emitted by an ultrasonic speaker affixed to a Freenove hexapod robot walking in parallel lines across Environment 2. As it walks, the arm carrying the speaker is rotated to different orientations to vary the directionality of the emitted sounds throughout the dataset. The stimuli are gathered from longitudinal recordings of gerbil families [Peterson et al. 2023. eLife].",
+        "num_samples": 156900,
+        "size": "236GB",
+        "environment": "Environment 2",
+        "num_microphones": 8,
+        "sampling_rate": "192kHz",
+        "additional_bullets": [
+            "Number of unique stimuli: 100"
+        ],
+        "links": [
+            {
+                "url": "https://users.flatironinstitute.org/~njoseph/datasets/hexapod-8m-e2_audio.h5",
+                "cluster_path": null,
+                "size": "236GB"
+            },
+            {
+                "url": "res/download_links/hexapod-8m-e2_pretrained.zip",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/pretrained_models/hexapod-8m-e2_pretrained.zip",
+                "size": "31MB"
+            },
+            {
+                "url": "res/download_links/hexapod-8m-e2_split.zip",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/test_train_splits/hexapod-8m-e2_split.zip",
+                "size": "0.5MB"
+            }
+        ]
+    },
+    {
+        "id": "mouseearbud",
+        "card_title": "MouseEarbud-24M-E3",
+        "card_bg_image_url": "res/dataset_images/mouse_earbud.png",
+        "short_description": "A dataset of sounds emitted by an earbud affixed to the head of a lone, freely-behaving mouse.",
+        "full_description": "A dataset of sounds emitted by an earbud affixed to the head of a lone, freely-behaving mouse. The stimuli are noise-filtered mouse vocalizations. Ground truth locations include 15 keypoints along the mouse's body.",
+        "num_samples": 200000,
+        "size": "208GB",
+        "environment": "Environment 3",
+        "num_microphones": 24,
+        "sampling_rate": "250kHz",
+        "additional_bullets": [],
+        "links": [
+            {
+                "url": "res/download_links/mouseearbud-24m-e3_audio.h5",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/audio/mouseearbud-24m-e3_audio.h5",
+                "size": "208GB"
+            },
+            {
+                "url": "res/download_links/mouseearbud-24m-e3_pretrained.zip",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/pretrained_models/mouseearbud-24m-e3_pretrained.zip",
+                "size": "9.1MB"
+            },
+            {
+                "url": "res/download_links/mouseearbud-24m-e3_split.zip",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/test_train_splits/mouseearbud-24m-e3_split.zip",
+                "size": "0.6MB"
+            }
+        ]
+    },
+    {
+        "id": "solomouse",
+        "card_title": "SoloMouse-24M-E3",
+        "card_bg_image_url": "res/dataset_images/solo_mouse.png",
+        "short_description": "A dataset of vocalizations emitted by a freely-behaving mouse.",
+        "full_description": "A dataset of vocalizations emitted by a freely-behaving mouse.",
+        "num_samples": 549,
+        "size": "362MB",
+        "environment": "Environment 3",
+        "num_microphones": 24,
+        "sampling_rate": "250kHz",
+        "additional_bullets": [],
+        "links": [
+            {
+                "url": "res/download_links/solomouse-24m-e3_audio.h5",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/audio/solomouse-24m-e3_audio.h5",
+                "size": "362MB"
+            }
+        ]
+    },
+    {
+        "id": "dyadmouse",
+        "card_title": "DyadMouse-24M-E3",
+        "card_bg_image_url": "res/dataset_images/dyad_mouse.png",
+        "short_description": "A dataset of vocalizations emitted by two freely-behaving mice.",
+        "full_description": "A dataset of vocalizations emitted by two freely-behaving mice.",
+        "num_samples": 2191,
+        "size": "2.1GB",
+        "environment": "Environment 3",
+        "num_microphones": 24,
+        "sampling_rate": "250kHz",
+        "additional_bullets": [],
+        "links": [
+            {
+                "url": "res/download_links/dyadmouse-24m-e3_audio.h5",
+                "cluster_path": "/mnt/home/atanelus/ceph/neurips_datasets/audio/dyadmouse-24m-e3_audio.h5",
+                "size": "2.1GB"
+            }
+        ]
+    }
+]

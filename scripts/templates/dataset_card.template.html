@@ -1,0 +1,24 @@
+<div class="col-lg-3 col-md-6 col-sm-12 mt-3">
+    <div class="card dataset-card">
+        <img class="card-img-top" src="{card_bg_image_url}"
+            alt="{card_title}">
+        <div class="card-img-overlay text-white dark-transluscent"
+            style="height: 3rem">
+            <h5 class="card-title">{card_title}</h5>
+        </div>
+        <div class="card-body">
+            <p class="card-text overflow-hidden">{short_description}</p>
+            <p class="card-text"> Size: {size}</p>
+            <div class="btn-group">
+            <button class="btn btn-outline-secondary" type="button"
+                data-toggle="modal"
+                data-target="#{id}-dataset-details-modal">Details</button>
+            <button class="btn btn-primary btn-outline-primary"
+                type="button" data-toggle="modal"
+                data-target="#{id}-dataset-downloads-modal"><img
+                src="res/download-icon-light.svg"
+                height="18" /></button>
+            </div>
+        </div>
+    </div>
+</div>

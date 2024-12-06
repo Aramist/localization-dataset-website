@@ -7,6 +7,44 @@ import pandas as pd
 from tqdm import tqdm
 
 
+def make_dataset_video_file_mp4(dataset_metadata_path: Path, output_path: Path):
+    md = pd.read_csv(dataset_metadata_path)
+
+    sample_video_path = md.iloc[0].video_path
+    cap = cv2.VideoCapture(sample_video_path)
+    width, height = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)), int(
+        cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
+    )
+    cap.release()
+    del cap
+
+    writer = cv2.VideoWriter(
+        str(output_path),
+        cv2.VideoWriter_fourcc(*"mp4v"),
+        10,
+        (width, height),
+        isColor=True,
+    )
+
+    # Can't guarantee the dataset is sorted by video_path, so this will be
+    # inefficient
+    last_cap = None
+    last_vid_path = None
+    for _, row in tqdm(md.iterrows(), total=len(md)):
+        if last_vid_path != row.video_path:
+            last_vid_path = row.video_path
+            if last_cap is not None:
+                last_cap.release()
+            last_cap = cv2.VideoCapture(last_vid_path)
+
+        idx = row["frame_idx"]
+        last_cap.set(cv2.CAP_PROP_POS_FRAMES, idx)
+        ret, frame = last_cap.read()
+        if ret:
+            writer.write(frame)
+    writer.release()
+
+
 def make_dataset_video_file(
     dataset_audio_path: Path, dataset_metadata_path: Path, output_path: Path
 ):
@@ -57,6 +95,7 @@ if __name__ == "__main__":
         dataset_dir / "sologerbil-4m-e1_audio.h5",
         dataset_dir / "edison-4m-e1_audio.h5",
         dataset_dir / "dyadgerbil-4m-e1_audio.h5",
+        dataset_dir / "gerbilearbud-4m-e1_audio.h5",
     ]
 
     metadata_files = [
@@ -64,6 +103,7 @@ if __name__ == "__main__":
         meta_dir / "solo_gerbil_metadata.csv",
         meta_dir / "edison_metadata.csv",
         meta_dir / "dyadgerbil_metadata.csv",
+        meta_dir / "gerbilearbud_metadata.csv",
     ]
 
     output_files = [
@@ -71,8 +111,14 @@ if __name__ == "__main__":
         vid_dir / "sologerbil-4m-e1_video.h5",
         vid_dir / "edison-4m-e1_video.h5",
         vid_dir / "dyadgerbil-4m-e1_video.h5",
+        vid_dir / "gerbilearbud-4m-e1_video.h5",
     ]
 
-    for a, m, o in zip(audio_files, metadata_files, output_files):
+    # for a, m, o in zip(audio_files, metadata_files, output_files):
+    # if not o.exists():
+    # make_dataset_video_file(a, m, o)
+
+    for m, o in zip(metadata_files, output_files):
+        o = o.with_suffix(".mp4")
         if not o.exists():
-            make_dataset_video_file(a, m, o)
+            make_dataset_video_file_mp4(m, o)
