@@ -95,6 +95,7 @@ if __name__ == "__main__":
         dataset_dir / "sologerbil-4m-e1_audio.h5",
         dataset_dir / "edison-4m-e1_audio.h5",
         dataset_dir / "dyadgerbil-4m-e1_audio.h5",
+        dataset_dir / "gerbilearbud-4m-e1_audio.h5",
     ]
 
     metadata_files = [
@@ -102,6 +103,7 @@ if __name__ == "__main__":
         meta_dir / "solo_gerbil_metadata.csv",
         meta_dir / "edison_metadata.csv",
         meta_dir / "dyadgerbil_metadata.csv",
+        meta_dir / "gerbilearbud_metadata.csv",
     ]
 
     output_files = [
@@ -109,6 +111,7 @@ if __name__ == "__main__":
         vid_dir / "sologerbil-4m-e1_video.h5",
         vid_dir / "edison-4m-e1_video.h5",
         vid_dir / "dyadgerbil-4m-e1_video.h5",
+        vid_dir / "gerbilearbud-4m-e1_video.h5",
     ]
 
     # for a, m, o in zip(audio_files, metadata_files, output_files):

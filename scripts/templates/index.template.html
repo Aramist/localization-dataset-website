@@ -1,0 +1,135 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>SSL Datasets</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav
+            class="navbar navbar-expand-sm navbar-light justify-content-between">
+            <a class="nav-brand my-1 ms-1"
+                href="https://neurostatslab.org/"><img
+                    src="res/NSL_Logo_RGB_Black.png" height="50" /></a>
+        </nav>
+
+        <div class="container-fluid" id="top-level">
+            <div class="container round bg-light" id="header-container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 id="heading" class="text-dark display-3">Benchmark
+                            Datasets for
+                            Sound Source Localization</h1>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+                        <p class='text-muted'>
+                            Here you can find a collection of datasets for
+                            benchmarking sound
+                            source localization algorithms.
+                            For each dataset, we provide a brief description,
+                            audio and video
+                            clips for each sound instance, ground truth source
+                            locations, and
+                            other relevant metadata.
+                        </p>
+                    </div>
+                    <div class="col-sm-8 col-md-2">
+                        <a
+                            href="https://github.com/neurostatslab/vocalocator/"><img
+                                src="res/github-mark.svg" /></a>
+                    </div>
+                </div>
+
+                <!-- small spacer -->
+                <div class="row justify-content-center">
+                    <div class="col-12 justify-content-center"
+                        style="height: 4em">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 justify-content-center">
+                        <h2 class="text-dark text-center">Datasets</h2>
+                    </div>
+                </div>
+
+                <!-- MARK: dataset card container-->
+                <div class="container" id="datasets-container">
+                    <div class="row mt-3">
+                        {dataset_cards}
+                    </div>
+                </div>
+
+                <!--  another small spacer -->
+                <div class="row justify-content-center">
+                    <div class="col-12 justify-content-center"
+                        style="height: 4em">
+                        <hr>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 justify-content-center">
+                        <h2 class="text-dark text-center">Environments</h2>
+                    </div>
+                </div>
+
+                <!-- MARK: environment card container -->
+                <div class="container" id="environments-container">
+                    <div class="row mt-3">
+                        {environment_cards}
+                    </div>
+                </div>
+                <!-- End: environment card container -->
+
+            </div>
+        </div>
+
+        <!-- MARK: details modals (hidden)-->
+        {dataset_details_modals}
+        <!-- End: dataset details modals-->
+
+        <!-- MARK: env details modals (hidden)-->
+        {environment_details_modals}
+        <!-- End: env details modals-->
+
+        <!-- MARK: download modals (hidden)-->
+        {download_modals}
+        <!-- End: download modals-->
+
+        <!-- Footer with MIT license info -->
+        <div class="container" id="footer-container">
+            <footer>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="text-muted">
+                            <a
+                                href="https://github.com/neurostatslab/gerbilizer/blob/main/LICENSE">MIT
+                                License</a> | &copy; 2024 NeuroStats Lab
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
