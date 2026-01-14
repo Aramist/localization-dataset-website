@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 253 55">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #9c9c9c;
+      }
+
+      .cls-4 {
+        fill: #8c1d1c;
+        stroke: #8c1d1c;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        font-family: Arial-BoldMT, Arial;
+        font-size: 28px;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <rect class="cls-4" x=".5" y=".5" width="252" height="54" rx="10.2" ry="10.2"/>
+  <text class="cls-5" transform="translate(18.1 34.24)"><tspan class="cls-1" x="0" y="0">OpenRevie</tspan><tspan class="cls-2" x="146.27" y="0">w</tspan><tspan class="cls-3" x="167.02" y="0">.net</tspan></text>
+</svg>
